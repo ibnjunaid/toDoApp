@@ -1,0 +1,74 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    background:lightgreen;
+}
+
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    background:lightgreen;
+}
+.header{
+    flex:1; 
+    text-align:center;
+    color:white;
+}
+
+.mainContainer{
+    display:flex;
+    flex:3;
+    flex-direction: row;
+}
+.inputArea , .displayArea{
+    height:400px;
+    background:rgb(29, 64, 80);
+    width:50%;
+    margin:5px;
+    border-radius:10px;
+    box-shadow: 2px 2px 1px 3px rgb(50, 155, 50);
+}
+.footer{
+    position:fixed;
+    color:white;
+    bottom:0;
+    text-align:center;
+    margin-left:35%;
+}
+.inputAreaField{
+    margin-top:20px;
+}
+
+input[name="toDoData"]
+{
+    width:100%;
+    height:30px;
+    color:green;
+    font-size:15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius:10px;
+    text-align:center;
+    background:rgb(168, 165, 165);
+
+}
+input[name="toDoDate"]
+{
+    border-radius:10px;
+    text-align:center;
+    font-size:15px;
+    margin:5px;
+    width:50%;
+    color:blue;
+}
+input[name="toDoTime"]{
+    width:45%;
+    border-radius:10px;
+    font-size:15px;
+    text-align:center;
+}
+* :focus
+{
+    outline:none;
+}
